@@ -1,0 +1,6 @@
+:HL["/chevere-app/_next/static/chunks/3zy5mxfv6qsa4.css","style"]
+:HL["/chevere-app/_next/static/media/2a65768255d6b625-s.p.3u4lli0-axodc.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/chevere-app/_next/static/media/70e3db2de7f94926-s.p.39pl-v7c3qrze.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/chevere-app/assets/logo.png","image"]
+:HL["/chevere-app/assets/obsession.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"posts","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"horror-gen-z","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"FGUrbnb6FI9HNpjWOQgyt"}
