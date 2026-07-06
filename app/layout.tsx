@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
+import { asset } from "@/lib/site";
 
 import "./globals.css";
 import "@/styles/header.css";
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   title: "chévere",
   description:
     "A lifestyle edit for culture, style, stories, and the little discoveries that make everyday life feel more inspired.",
-  icons: { icon: "/assets/icon.png" },
+  icons: { icon: asset("/assets/icon.png") },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

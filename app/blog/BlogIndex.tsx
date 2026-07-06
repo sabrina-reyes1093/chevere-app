@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { Feather } from "lucide-react";
 import PostCard from "@/components/PostCard";
 import { categories, categoryLabel, posts } from "@/data/posts";
+import { BASE_PATH } from "@/lib/site";
 
 const validSlugs = new Set(categories.map((c) => c.slug));
 
@@ -26,7 +27,8 @@ export default function BlogIndex() {
 
   function select(next: string) {
     setCat(next);
-    window.history.replaceState(null, "", next === "all" ? "/blog" : `/blog?cat=${next}`);
+    const base = `${BASE_PATH}/blog/`;
+    window.history.replaceState(null, "", next === "all" ? base : `${base}?cat=${next}`);
   }
 
   const visible = cat === "all" ? posts : posts.filter((p) => p.category === cat);

@@ -3,6 +3,7 @@ import { Mail } from "lucide-react";
 import SearchPanel from "./SearchPanel";
 import InstagramIcon from "./InstagramIcon";
 import TikTokIcon from "./TikTokIcon";
+import { asset } from "@/lib/site";
 
 const INSTAGRAM_URL = "https://www.instagram.com/itschevere/";
 const TIKTOK_URL = "https://www.tiktok.com/@itschevere";
@@ -12,7 +13,7 @@ export default function Header() {
     <header className="site-header">
       <Link className="header-logo" href="/" aria-label="chévere home">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/assets/logo.png" alt="chévere" />
+        <img src={asset("/assets/logo.png")} alt="chévere" />
       </Link>
       <div className="header-actions">
         <SearchPanel />

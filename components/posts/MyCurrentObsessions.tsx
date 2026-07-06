@@ -1,3 +1,5 @@
+import { asset } from "@/lib/site";
+
 type Section = {
   heading: string;
   image: string;
@@ -106,7 +108,7 @@ export default function MyCurrentObsessions() {
       <div className="post-collage">
         {collage.map((c) => (
           // eslint-disable-next-line @next/next/no-img-element
-          <img key={c.cls} src={c.image} alt={c.alt} className={c.cls} />
+          <img key={c.cls} src={asset(c.image)} alt={c.alt} className={c.cls} />
         ))}
       </div>
       <p>
@@ -121,7 +123,7 @@ export default function MyCurrentObsessions() {
             {s.body}
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="post-section-img" src={s.image} alt={s.alt} />
+          <img className="post-section-img" src={asset(s.image)} alt={s.alt} />
         </div>
       ))}
       <p className="post-signoff">

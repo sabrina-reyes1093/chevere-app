@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { categoryLabel, type Post } from "@/data/posts";
+import { asset } from "@/lib/site";
 
 export default function PostCard({ post }: { post: Post }) {
   return (
@@ -10,7 +11,7 @@ export default function PostCard({ post }: { post: Post }) {
       <div
         className="thumb"
         style={{
-          backgroundImage: `url(${post.image})`,
+          backgroundImage: `url(${asset(post.image)})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

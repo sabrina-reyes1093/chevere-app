@@ -84,9 +84,22 @@ at `/posts/<slug>` all pick it up automatically.
 
 ## Deploying
 
-- **Vercel (recommended):** push this folder to a GitHub repo and import it
-  at vercel.com — zero config, and you keep the door open for future dynamic
-  features (comments, auth, API routes).
-- **GitHub Pages:** uncomment `output: "export"` and `basePath: "/chevere"`
-  in `next.config.ts`, run `npm run build`, and publish the generated `out/`
-  folder. (Static export — everything works, but no server features.)
+The site deploys to **GitHub Pages** with one command:
+
+```bash
+npm run deploy
+```
+
+That builds the static export with `NEXT_PUBLIC_BASE_PATH=/chevere-app` and
+publishes the `out/` folder to the `gh-pages` branch, which Pages serves at
+
+> https://sabrina-reyes1093.github.io/chevere-app/
+
+So publishing a post is: edit → commit → `npm run deploy`.
+
+Notes:
+- `next.config.ts` uses `output: "export"` (fully static site). If the app
+  ever needs server features (API routes, auth), remove that line and host
+  on a Node platform instead.
+- Asset paths go through `asset()` from `lib/site.ts` so images work both
+  locally (served at `/`) and on Pages (served under `/chevere-app`).

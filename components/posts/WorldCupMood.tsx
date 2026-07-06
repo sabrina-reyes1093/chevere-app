@@ -1,9 +1,11 @@
+import { asset } from "@/lib/site";
+
 export default function WorldCupMood() {
   return (
     <div className="post-body post-body--dropcap">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/assets/world-cup-2026.jpg"
+        src={asset("/assets/world-cup-2026.jpg")}
         alt="World Cup 2026"
         style={{
           width: "100%",
