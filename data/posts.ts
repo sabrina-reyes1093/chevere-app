@@ -35,6 +35,14 @@ export type Post = {
 // Newest first — the blog grid renders in this order.
 export const posts: Post[] = [
   {
+    slug: "horror-gen-z",
+    title: "Horror Is Having a Moment Again — and Gen Z Is Changing the Rules",
+    dek: "The new wave of horror is moodier, stranger, and more psychological — and Gen Z filmmakers are the reason why.",
+    category: "tv-film",
+    date: "Jul 5, 2026",
+    image: "/assets/obsession.png",
+  },
+  {
     slug: "world-cup-mood",
     title: "The World Cup Isn't Just Soccer, It's a Whole Mood",
     dek: "The 2026 World Cup is already in knockout-stage mode, with the Round of 16 underway and major matchups like Mexico vs. England, Portugal vs. Spain, USA vs. Belgium, Argentina vs. Egypt, and Switzerland vs. Colombia on the schedule.",
